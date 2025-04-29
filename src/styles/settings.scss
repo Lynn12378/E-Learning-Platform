@@ -1,0 +1,50 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+.hero-section {
+    min-height: 100%;
+    padding-top: 100px;
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url('@/assets/cover.png') center/cover no-repeat;
+    color: white;
+  }
+
+  p.hero {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  h1.hero {
+    color: #eeeeee;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .gap-4 > * {
+    margin: 8px;
+  }
+
+  .truncate-filename .v-input__control {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .word-viewer {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+  }
+  .docx {
+    line-height: 1.5;
+  }
